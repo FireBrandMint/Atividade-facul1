@@ -1,3 +1,4 @@
+import jade.content.onto.Ontology;
 import jade.core.Agent;
 
 import java.util.ArrayList;
@@ -12,7 +13,8 @@ public class UserAgent extends Agent
     private ArrayList<String> books = new ArrayList<>();
     protected void setup ()
     {
-
+        //addbehaviour adds shit in
+        /*
         System.out.println("Perfil: \"" + this.getLocalName() + "\" sendo inicializado.");
 
         Scanner fodder1 = new Scanner(System.in);
@@ -24,13 +26,14 @@ public class UserAgent extends Agent
             if(livro.equals("pare")) escape = true;
             else books.add(livro);
         }
+         */
 
         System.out.println("Perfil \"" + this.getLocalName() + "\" (" + this.getName() + ") foi inicializado.");
-        System.out.print("Ele quer comprar os seguintes livros: " + (books.size() == 0 ? "NENHUM" : ""));
-        for(int i = 0; i < books.size(); ++i)
-        {
-            System.out.print(books.get(i) + ", ");
-        }
+        //System.out.print("Ele quer comprar os seguintes livros: " + (books.size() == 0 ? "NENHUM" : ""));
+        //for(int i = 0; i < books.size(); ++i)
+        //{
+        //    System.out.print(books.get(i) + ", ");
+        //}
         System.out.println();
         System.out.println("Info:");
         System.out.println(this.getAID());
